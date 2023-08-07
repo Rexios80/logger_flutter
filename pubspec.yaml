@@ -10,5 +10,5 @@ dependencies:
   flutter:
     sdk: flutter
 
-  logger: 1.1.0
+  logger: ^2.0.1
   async: ^2.8.2

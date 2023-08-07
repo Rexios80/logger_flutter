@@ -13,14 +13,10 @@ class _WrappedOutput implements LogOutput {
   }
 
   @override
-  void destroy() {
-    innerLogOutput.destroy();
-  }
+  Future<void> destroy() => innerLogOutput.destroy();
 
   @override
-  void init() {
-    innerLogOutput.init();
-  }
+  Future<void> init() => innerLogOutput.init();
 }
 
 class LogConsole extends StatefulWidget {
